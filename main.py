@@ -24,11 +24,12 @@ multiplicationNumbers = 0
 lengthOfList = len(numbersList)
 a = 0
 i = 0
-
-while i < lengthOfList:
-    if i % 2 == 0: # отбираю элементы с парными индексами
-        multiplicationNumbers += numbersList[i] # суммирую все эти элементы
-    i += 1
-print(multiplicationNumbers * numbersList[-1]) # сумму всех отобраных чисел умножаю на последний элемент списка
-
+if len(numbersList) != 0: # проверка наличия элементов в списке.
+    while i < lengthOfList:
+        if i % 2 == 0: # отбираю элементы с парными индексами
+         multiplicationNumbers += numbersList[i] # суммирую все эти элементы
+        i += 1
+    print(multiplicationNumbers * numbersList[-1]) # сумму всех отобраных чисел умножаю на последний элемент списка
+else:
+    print(0)
 
