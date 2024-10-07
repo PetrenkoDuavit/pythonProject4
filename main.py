@@ -26,9 +26,9 @@ a = 0
 i = 0
 
 while i < lengthOfList:
-    if i % 2 == 0:
-        multiplicationNumbers += numbersList[i]
+    if i % 2 == 0: # отбираю элементы с парными индексами
+        multiplicationNumbers += numbersList[i] # суммирую все эти элементы
     i += 1
-print(multiplicationNumbers * numbersList[-1])
+print(multiplicationNumbers * numbersList[-1]) # сумму всех отобраных чисел умножаю на последний элемент списка
 
 
