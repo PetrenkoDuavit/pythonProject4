@@ -19,17 +19,34 @@
 
 # homeWorck 4.2
 
-numbersList = [0, 1, 7, 2, 4, 8]
-multiplicationNumbers = 0
-lengthOfList = len(numbersList)
-a = 0
-i = 0
-if len(numbersList) != 0: # проверка наличия элементов в списке.
-    while i < lengthOfList:
-        if i % 2 == 0: # отбираю элементы с парными индексами
-         multiplicationNumbers += numbersList[i] # суммирую все эти элементы
-        i += 1
-    print(multiplicationNumbers * numbersList[-1]) # сумму всех отобраных чисел умножаю на последний элемент списка
-else:
-    print(0)
+# numbersList = [0, 1, 7, 2, 4, 8]
+# multiplicationNumbers = 0
+# lengthOfList = len(numbersList)
+# a = 0
+# i = 0
+# if len(numbersList) != 0: # проверка наличия элементов в списке.
+#     while i < lengthOfList:
+#         if i % 2 == 0: # отбираю элементы с парными индексами
+#          multiplicationNumbers += numbersList[i] # суммирую все эти элементы
+#         i += 1
+#     print(multiplicationNumbers * numbersList[-1]) # сумму всех отобраных чисел умножаю на последний элемент списка
+# else:
+#     print(0)
 
+# homeWork 4.3
+
+import random
+list = []
+listOfTree = []
+listLang = random.randrange(3,11) # создаю случайную длину списка
+i = 0
+
+while i < listLang:
+    list.append(random.randrange(0,10)) # наполняю список случайными числами
+    i +=1
+
+listOfTree.append(list[0])
+listOfTree.append(list[2])
+listOfTree.append(list[-2])
+print(list)
+print(listOfTree)
